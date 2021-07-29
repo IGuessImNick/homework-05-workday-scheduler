@@ -63,6 +63,15 @@ formFill8.value = activity8;
 var currentHour = moment().format('h');
 
 renderDay();
+renderBackgroundColor9();
+renderBackgroundColor10();
+renderBackgroundColor11();
+renderBackgroundColor12();
+renderBackgroundColor13();
+renderBackgroundColor14();
+renderBackgroundColor15();
+renderBackgroundColor16();
+renderBackgroundColor17();
 
 // renders the current day and time using moment(), increments every second
 function renderDay() {
@@ -71,9 +80,86 @@ function renderDay() {
 };
 
 function renderBackgroundColor9() {
-    if (currentHour !== r9.textContent) {
+    if (currentHour < r9.textContent) {
         tr9.setAttribute("class", "bg-danger");
-    } 
+    } else if (currentHour === r9.textContent) {
+        tr9.setAttribute("class", "bg-success");
+    } else if (currentHour > r9.textContent) {
+        tr9.setAttribute("class", "bg-white");
+    }
+}
+
+function renderBackgroundColor10() {
+    if (currentHour < r10.textContent) {
+        tr10.setAttribute("class", "bg-white");
+    } else if (currentHour === r10.textContent) {
+        tr10.setAttribute("class", "bg-success");
+    } else if (currentHour > r10.textContent) {
+        tr10.setAttribute("class", "bg-danger");
+    }
+}
+function renderBackgroundColor11() {
+    if (currentHour < r11.textContent) {
+        tr11.setAttribute("class", "bg-white");
+    } else if (currentHour === r11.textContent) {
+        tr11.setAttribute("class", "bg-success");
+    } else if (currentHour > r11.textContent) {
+        tr11.setAttribute("class", "bg-danger");
+    }
+}
+function renderBackgroundColor12() {
+    if (currentHour < r12.textContent) {
+        tr12.setAttribute("class", "bg-white");
+    } else if (currentHour === r12.textContent) {
+        tr12.setAttribute("class", "bg-success");
+    } else if (currentHour > r12.textContent) {
+        tr12.setAttribute("class", "bg-danger");
+    }
+}
+function renderBackgroundColor13() {
+    if (currentHour < r13.textContent) {
+        tr13.setAttribute("class", "bg-white");
+    } else if (currentHour === r13.textContent) {
+        tr13.setAttribute("class", "bg-success");
+    } else if (currentHour > r13.textContent) {
+        tr13.setAttribute("class", "bg-danger");
+    }
+}
+function renderBackgroundColor14() {
+    if (currentHour < r14.textContent) {
+        tr14.setAttribute("class", "bg-white");
+    } else if (currentHour === r14.textContent) {
+        tr14.setAttribute("class", "bg-success");
+    } else if (currentHour > r14.textContent) {
+        tr14.setAttribute("class", "bg-danger");
+    }
+}
+function renderBackgroundColor15() {
+    if (currentHour < r15.textContent) {
+        tr15.setAttribute("class", "bg-white");
+    } else if (currentHour === r15.textContent) {
+        tr15.setAttribute("class", "bg-success");
+    } else if (currentHour > r15.textContent) {
+        tr15.setAttribute("class", "bg-danger");
+    }
+}
+function renderBackgroundColor16() {
+    if (currentHour < r16.textContent) {
+        tr16.setAttribute("class", "bg-white");
+    } else if (currentHour === r16.textContent) {
+        tr16.setAttribute("class", "bg-success");
+    } else if (currentHour > r16.textContent) {
+        tr16.setAttribute("class", "bg-danger");
+    }
+}
+function renderBackgroundColor17() {
+    if (currentHour < r17.textContent) {
+        tr17.setAttribute("class", "bg-white");
+    } else if (currentHour === r17.textContent) {
+        tr17.setAttribute("class", "bg-success");
+    } else if (currentHour > r17.textContent) {
+        tr17.setAttribute("class", "bg-white");
+    }
 }
 
 
