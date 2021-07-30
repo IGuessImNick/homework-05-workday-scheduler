@@ -1,11 +1,4 @@
-// function getBackgroundClass(hour) {
-//     if (hour < currentHour) {
-//         currentHour.css("class", past)
-//     } else if (hour === currentHour) {
-//         currentHour.css("class", present)
-//     } else if (hour > currentHour)
-// }
-
+// DOM Selectors
 const currentDay = document.querySelector("#currentDay");
 
 const saveBtn0 = document.querySelector("#save0");
@@ -40,6 +33,7 @@ const tr15 = document.querySelector('#tr15');
 const tr16 = document.querySelector('#tr16');
 const tr17 = document.querySelector('#tr17');
 
+// Stores input to local drive
 var activity0 = localStorage.getItem("activity0");
 var activity1 = localStorage.getItem("activity1");
 var activity2 = localStorage.getItem("activity2");
@@ -50,6 +44,7 @@ var activity6 = localStorage.getItem("activity6");
 var activity7 = localStorage.getItem("activity7");
 var activity8 = localStorage.getItem("activity8");
 
+// records value of each time block input
 formFill0.value = activity0;
 formFill1.value = activity1;
 formFill2.value = activity2;
@@ -62,6 +57,7 @@ formFill8.value = activity8;
 
 var currentHour = moment().format('h');
 
+// functions that run when page loads
 renderDay();
 renderBackgroundColor9();
 renderBackgroundColor10();
@@ -158,7 +154,7 @@ function renderBackgroundColor17() {
     } else if (currentHour === r17.textContent) {
         tr17.setAttribute("class", "bg-success");
     } else if (currentHour > r17.textContent) {
-        tr17.setAttribute("class", "bg-white");
+        tr17.setAttribute("class", "bg-danger");
     }
 }
 
